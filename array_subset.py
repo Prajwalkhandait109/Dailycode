@@ -16,7 +16,7 @@ Constraints:
 1 <= a[i], b[j] <= 10'''
 
 Solution 1 :
-#User function Template for python3
+# solved most test cases but failed for some
 
 class Solution:
     #Function to check if a is a subset of b.
@@ -39,4 +39,18 @@ class Solution:
     
     
     
-Solution 2 :
+Solution 2 : #optimal solution
+
+
+from collections import Counter
+
+class Solution:
+    # Function to check if b is a subset of a (frequency matters)
+    def isSubset(self, a, b):
+        count_a = Counter(a)
+        count_b = Counter(b)
+        
+        for num in count_b:
+            if count_b[num] > count_a.get(num, 0):
+                return False
+        return True
