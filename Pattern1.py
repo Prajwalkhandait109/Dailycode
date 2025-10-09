@@ -45,14 +45,24 @@ class patternPrinter:
             print()
             
     '''
+    1
+    2 2
+    3 3 3
+    4 4 4 4
+    5 5 5 5 5
     
     '''
+    def pattern4(self,n):
+        for i in range(n):
+            for j in range (i+1):
+                print(i+1,end = " ")
+            print()
             
         
 def main():
     n = 5  
     printer = patternPrinter()
-    printer.pattern3(n)
+    printer.pattern4(n)
 
 if __name__ == "__main__":
     main()
