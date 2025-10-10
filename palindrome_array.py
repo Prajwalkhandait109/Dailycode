@@ -1,0 +1,41 @@
+'''
+Given an array arr[] of positive integers. Return true if all the array elements are palindrome otherwise, return false.
+
+Examples:
+
+Input: arr[] = [111, 222, 333, 444, 555]
+Output: true
+Explanation:
+arr[0] = 111, which is a palindrome number.
+arr[1] = 222, which is a palindrome number.
+arr[2] = 333, which is a palindrome number.
+arr[3] = 444, which is a palindrome number.
+arr[4] = 555, which is a palindrome number.
+As all numbers are palindrome so This will return true.
+Input: arr[] = [121, 131, 20]
+Output: false
+Explanation: 20 is not a palindrome hence the output is false.
+Expected Time Complexity: O(nlogn)
+Expected Space Complexity: O(1)
+
+Constraints:
+1 <=arr.size<= 20
+1 <=arr[i]<= 105
+
+
+'''
+
+#Solution : 
+def isPalinArray(arr):
+    # Code here
+    for i in arr:
+        dup = i
+        rev = 0
+        while i > 0:
+            ld = i % 10
+            i = i // 10
+            rev = (rev * 10) + ld
+        if rev != dup:
+            return False 
+    return True 
+    

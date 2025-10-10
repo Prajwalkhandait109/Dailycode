@@ -13,7 +13,7 @@ class solution:
             print("False")
         
 def main():
-    n = 145
+    n = 153
     sol = solution()
     sol.armstrong(n)
     

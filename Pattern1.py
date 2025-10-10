@@ -58,11 +58,30 @@ class patternPrinter:
                 print(i+1,end = " ")
             print()
             
-        
+            
+    '''
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+    
+    '''
+    def pattern5(self,n):
+        for i in range(n,0,-1):
+            for j in range(i):
+                print("*",end = " ")
+            print()    
+    
+    '''
+    
+    '''
+    
+    
 def main():
     n = 5  
     printer = patternPrinter()
-    printer.pattern4(n)
+    printer.pattern5(n)
 
 if __name__ == "__main__":
     main()
