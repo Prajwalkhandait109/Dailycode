@@ -88,15 +88,34 @@ class patternPrinter:
             print()
             
     '''
+        *    
+      * * *
+    * * * * *
+  * * * * * * *
+    '''
+    def pattern7(self,n):
+        for i in range(n):
+            for j in range(n-i):
+                print(" ",end = " ")
+            for k in range(i*2+1):
+                print("*",end = " ")
+            for l in range(n-i):
+                print(" ",end = " ")
+            print()
     
     '''
-            
+    * * * * * * *
+      * * * * *
+        * * *
+          * 
+    '''
+    
                 
     
 def main():
     n = 5  
     printer = patternPrinter()
-    printer.pattern6(n)
+    printer.pattern7(n)
 
 if __name__ == "__main__":
     main()
