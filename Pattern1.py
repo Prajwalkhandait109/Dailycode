@@ -120,15 +120,53 @@ class patternPrinter:
             print()
             
     '''
+          *    
+        * * *
+      * * * * *
+    * * * * * * *
+    * * * * * * *
+      * * * * *
+        * * *
+          * 
+    '''
+          
+    def pattern9(self,n):
+        for i in range(n):
+            for j in range(n-i):
+                print(" ",end = " ")
+            for k in range(2*i+1):
+                print("*",end = " ")
+            for l in range(n-i):
+                print(" ",end = " ")
+            print()
+        for i in range(n-1,-1,-1):
+            for j in range(n-i):
+                print(" ", end = " ")
+            for k in range(2*i+1):
+                print("*",end = " ")
+            for l in range(n-i):
+                print(" ",end = " ")
+            print()
+            #OROROROROROROROROROROR
+    def patternOR(self, n):
+        for i in range(n):
+            print(' ' * (n - i) + '*' * (2 * i + 1),end = " ")
+            print()
+        for i in range(n - 2, -1, -1):
+            print(' ' * (n - i) + '*' * (2 * i + 1), end = " ")
+            print()
+
+               
+    '''
     
     '''
-            
+                  
                 
     
 def main():
     n = 5  
     printer = patternPrinter()
-    printer.pattern8(n)
+    printer.patternOR(n)
 
 if __name__ == "__main__":
     main()
