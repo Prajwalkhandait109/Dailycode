@@ -20,9 +20,9 @@ class Solution:
     
     # Just print the space seperated array elements
 	def printArray(self, arr):
+		
+     
 	    # code here
-	    a = len(arr)
-	    for i in range(a):
-	        
-	        
-            print(int(arr[i]), end = " ")
+		a = len(arr)
+		for i in range(a):
+                 print(int(arr[i]), end = " ")
