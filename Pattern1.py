@@ -227,12 +227,27 @@ class patternPrinter:
                 count+=1
             print()
     
-      
+    '''
+    A
+    A B
+    A B C
+    A B C D
+    A B C D E
+    ''' 
+    def pattern14(self,n):
+        for i in range(1, n + 1):
+            for j in range(i):
+                print(chr(65 + j), end=" ")
+            print()
+
+    
+    
+    
     
 def main():
     n = 5  
     printer = patternPrinter()
-    printer.pattern13(n)
+    printer.pattern14(n)
 
 if __name__ == "__main__":
     main()
