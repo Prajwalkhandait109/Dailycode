@@ -239,15 +239,113 @@ class patternPrinter:
             for j in range(i):
                 print(chr(65 + j), end=" ")
             print()
-
+            
+            
+    '''
+    A B C D E
+    A B C D
+    A B C
+    A B
+    A
+    '''
+    def pattern15(self,n):
+        for i in range(n,0,-1):
+            for j in range(i):
+                print(chr(65 + j),end = " ")
+            print()
+            
+            
+    '''
+    A
+    B B
+    C C C
+    D D D D
+    E E E E E
+    '''
+    def pattern16(self,n):
+        for i in range (n):
+            for j in range(i+1):
+                print(chr(65+i),end = " ")
+            print()
+            
+            
+    '''
+       A
+      ABA
+     ABCBA
+    ABCDCBA
+    '''
+    def pattern17(self,n):
+        for i in range(n):
+            for j in range(n-i):
+                print(" ",end = " ")
+            for k in range(i+1):
+                print(chr(65+k),end = " ")
+            for k in range(i-1,-1,-1):
+                print(chr(65+k),end = " ")
+            for l in range(n-i):
+                print(" ",end = " ")
+            print()
+    '''
+    E
+    D E
+    C D E
+    B C D E
+    A B C D E
+    '''
+    def pattern18(self,n):
+        for i in range(n):
+            for j in range(i,-1,-1):
+                print(chr((65+(n-1))-j),end = " ")
+            print()
     
+    '''
+    **********
+    ****  ****
+    ***    ***
+    **      **
+    *        *
+    *        *
+    **      **
+    ***    ***
+    ****  ****
+    **********
     
+    '''
+    def pattern19(self,n):
+        for i in range(n):
+            for j in range(n-i):
+                print("*",end = " ")
+            for k in range(2*i):
+                print(" ",end = " ")
+            for l in range(n-i):
+                print("*",end = " ")
+            print()
+        for i in range(n-1,-1,-1):
+            for j in range(n-i):
+                print("*",end = " ")
+            for k in range(2*i):
+                print(" ",end = " ")
+            for l in range(n-i):
+                print("*",end = " ")
+            print()
+            
+            
+    '''
+    *      *
+    **    **
+    ***  ***
+    ********
+    ***  ***
+    **    **
+    *      *
+    '''
     
     
 def main():
     n = 5  
     printer = patternPrinter()
-    printer.pattern14(n)
+    printer.pattern19(n)
 
 if __name__ == "__main__":
     main()
