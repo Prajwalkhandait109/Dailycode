@@ -340,12 +340,52 @@ class patternPrinter:
     **    **
     *      *
     '''
-    
+    def pattern20(self,n):
+        for i in range(n):
+            for j in range(i+1):
+                print("*",end = "")
+            for k in range(2*(n-i)-2):
+                print(" ", end = "")
+            for j in range(i+1):
+                print("*",end = "")
+            print()
+        for i in range(n-2,-1,-1):
+            for j in range(i+1):
+                print("*",end = "")
+            for k in range(2*(n-i)-2):
+                print(" ", end = "")
+            for j in range(i+1):
+                print("*",end = "")
+            print()
+            
+    '''
+    * * * *
+    *     *
+    *     *
+    * * * * 
+    '''  
+    def pattern21(self,n):
+        for i in range(n):
+             print("*",end = " ")
+             if i == 0 or i == n-1:
+                for  j in range(n-1):
+                    print('*',end = " ")
+             elif i!=0 and i!=1 or i!=n-1:
+                
+                for k in range(2,n):
+                    print(" ", end = " ") 
+                for l in range(1):
+                    print("*",end="")  
+                
+             print()
+            
+            
+            
     
 def main():
-    n = 5  
+    n = 5
     printer = patternPrinter()
-    printer.pattern19(n)
+    printer.pattern21(n)
 
 if __name__ == "__main__":
     main()
