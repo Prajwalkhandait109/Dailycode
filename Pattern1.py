@@ -378,14 +378,43 @@ class patternPrinter:
                     print("*",end="")  
                 
              print()
+             
+             
+             #OR OPTIMAL
+    def pattern22(self,n):
+        for i in range(n):
+            for j in range(n):
+                if i == 0 or i == n-1 or j == 0 or j == n-1:
+                    print("*", end=" ")
+                else:
+                    print(" ", end=" ")
+            print()
+
             
+            
+    '''
+    4 4 4 4 4 4 4
+    4 3 3 3 3 3 4
+    4 3 2 2 2 3 4
+    4 3 2 1 2 3 4
+    4 3 2 2 2 3 4          
+    4 3 3 3 3 3 4     
+    4 4 4 4 4 4 4
+    '''        
+    def pattern23(self,n):
+        size = 2 * n - 1
+        for i in range(size):
+            for j in range (size):
+                min_dist=min(i,j,size - i - 1,size - j - 1)
+                print(n-min_dist, end = " ")
+            print()
             
             
     
 def main():
     n = 5
     printer = patternPrinter()
-    printer.pattern21(n)
+    printer.pattern23(n)
 
 if __name__ == "__main__":
     main()
