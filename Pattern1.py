@@ -427,12 +427,37 @@ class patternPrinter:
                     
             print()
             
-            
+    '''
+              *
+            *   *
+          *       *
+        *           *
+      *               *
+    * * * * * * * * * * *
+    '''
+    def pattern25(self,n):
+        
+        for i in range(n):
+            # Print leading spaces for triangle alignment
+            print(" " * (n - i - 1), end="")
+            for j in range(2 * i + 1):
+                # Outline logic:
+                # First row, last row, or first/last star in each row
+                if i == n - 1 or j == 0 or j == 2 * i:
+                    print("*", end="")
+                else:
+                    print(" ", end="")
+            print()
+
+  
+    
+    
+    
     
 def main():
     n = 5
     printer = patternPrinter()
-    printer.pattern24(n)
+    printer.pattern25(n)
 
 if __name__ == "__main__":
     main()
