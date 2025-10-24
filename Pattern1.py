@@ -448,8 +448,30 @@ class patternPrinter:
                 else:
                     print(" ", end="")
             print()
+            
+            
+    '''
+    
+            *
+          * * 
+        *   *
+      *     *
+    * * * * * 
+    '''
 
-  
+    def pattern26(self,n):
+        for i in range(n):
+            # Leading spaces for mirror effect
+            print(" " * (n - i - 1) * 2, end="")
+            for j in range(i + 1):
+                # Outline: left edge (j==0), right edge (j==i), base (i==n-1)
+                if j == 0 or j == i or i == n - 1:
+                    print("*", end=" ")
+                else:
+                    print(" ", end=" ")
+            print()
+
+        
     
     
     
@@ -457,7 +479,7 @@ class patternPrinter:
 def main():
     n = 5
     printer = patternPrinter()
-    printer.pattern25(n)
+    printer.pattern26(n)
 
 if __name__ == "__main__":
     main()
