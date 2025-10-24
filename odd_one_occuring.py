@@ -22,3 +22,13 @@ class Solution:
         for num in arr:
             result ^= num
         return result
+    
+#Solution :
+from collections import Counter
+class Solution:
+    def getOddOccurance(self, arr):
+        freq = Counter(arr)
+        for num, count in freq.items():
+            if count % 2 != 0:
+                print(num)
+        
