@@ -472,14 +472,27 @@ class patternPrinter:
             print()
 
         
-    
-    
+    '''
+    * * * * *
+    *     *
+    *   *
+    * *
+    *
+    '''
+    def pattern27(self,n):
+        for i in range(n,-1,-1):
+            for j in range(i+1):
+                if j==i or j==0 or i==n:
+                    print("*", end = " ")
+                else:
+                    print(" ",end = " ")
+            print()
     
     
 def main():
     n = 5
     printer = patternPrinter()
-    printer.pattern26(n)
+    printer.pattern27(n)
 
 if __name__ == "__main__":
     main()
