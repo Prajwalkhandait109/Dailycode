@@ -28,7 +28,7 @@ class patternPrinter:
                 print("*",end = " ") 
             print()    
             
-        
+    #pattern 3   
     '''
     1
     1 2
@@ -43,7 +43,8 @@ class patternPrinter:
             for j in range(i+1):
                 print(j+1,end = " ")
             print()
-            
+      
+    #pattern 4      
     '''
     1
     2 2
@@ -58,7 +59,7 @@ class patternPrinter:
                 print(i+1,end = " ")
             print()
             
-            
+    #pattern 5       
     '''
     * * * * *
     * * * *
@@ -73,6 +74,8 @@ class patternPrinter:
                 print("*",end = " ")
             print()    
     
+    
+    #pattern 6
     '''
     1 2 3 4 5
     1 2 3 4
@@ -86,7 +89,8 @@ class patternPrinter:
             for j in range(i):
                 print(j+1,end = " ")
             print()
-            
+    
+    #pattern 7        
     '''
         *    
       * * *
@@ -103,6 +107,7 @@ class patternPrinter:
                 print(" ",end = " ")
             print()
     
+    #pattern 8
     '''
     * * * * * * *
       * * * * *
@@ -118,7 +123,8 @@ class patternPrinter:
             for l in range(n-i):
                 print(" ",end = " ")
             print()
-            
+    
+    #pattern 9      
     '''
           *    
         * * *
@@ -156,7 +162,7 @@ class patternPrinter:
             print('  ' * (n - i) + ' *' * (2 * i + 1), end = " ")
             print()
 
-               
+    #pattern 10          
     '''
     *
     * *
@@ -176,7 +182,8 @@ class patternPrinter:
             for j in range(i):
                 print("*",end = " ")
             print()
-            
+    
+    #pattern 11        
     '''
     1
     0 1
@@ -194,7 +201,7 @@ class patternPrinter:
                 flag = 1- flag
             print()    
          
-            
+    #pattern 12        
     '''
     1      1
     12    21
@@ -211,6 +218,7 @@ class patternPrinter:
                 
             print()
     
+    #pattern 13
     '''
     1
     2 3
@@ -227,6 +235,8 @@ class patternPrinter:
                 count+=1
             print()
     
+    
+    #pattern 14
     '''
     A
     A B
@@ -240,7 +250,7 @@ class patternPrinter:
                 print(chr(65 + j), end=" ")
             print()
             
-            
+    #pattern 15       
     '''
     A B C D E
     A B C D
@@ -254,7 +264,7 @@ class patternPrinter:
                 print(chr(65 + j),end = " ")
             print()
             
-            
+    #pattern 16        
     '''
     A
     B B
@@ -268,7 +278,7 @@ class patternPrinter:
                 print(chr(65+i),end = " ")
             print()
             
-            
+    #pattern 17       
     '''
        A
       ABA
@@ -286,6 +296,9 @@ class patternPrinter:
             for l in range(n-i):
                 print(" ",end = " ")
             print()
+            
+            
+    #pattern 18        
     '''
     E
     D E
@@ -299,6 +312,8 @@ class patternPrinter:
                 print(chr((65+(n-1))-j),end = " ")
             print()
     
+    
+    #pattern 19
     '''
     **********
     ****  ****
@@ -330,7 +345,7 @@ class patternPrinter:
                 print("*",end = " ")
             print()
             
-            
+    #pattern 20       
     '''
     *      *
     **    **
@@ -357,7 +372,9 @@ class patternPrinter:
             for j in range(i+1):
                 print("*",end = "")
             print()
-            
+    
+    
+    #pattern 21      
     '''
     * * * *
     *     *
@@ -391,7 +408,7 @@ class patternPrinter:
             print()
 
             
-            
+    #pattern 23        
     '''
     4 4 4 4 4 4 4
     4 3 3 3 3 3 4
@@ -408,7 +425,8 @@ class patternPrinter:
                 min_dist=min(i,j,size - i - 1,size - j - 1)
                 print(n-min_dist, end = " ")
             print()
-            
+    
+    #pattern 24        
     '''
     *
     * *
@@ -426,7 +444,9 @@ class patternPrinter:
                               
                     
             print()
-            
+    
+    
+    #pattern 25        
     '''
               *
             *   *
@@ -449,7 +469,7 @@ class patternPrinter:
                     print(" ", end="")
             print()
             
-            
+    #pattern 26        
     '''
     
             *
@@ -471,7 +491,7 @@ class patternPrinter:
                     print(" ", end=" ")
             print()
 
-        
+     #pattern 27   
     '''
     * * * * *
     *     *
@@ -488,6 +508,8 @@ class patternPrinter:
                     print(" ",end = " ")
             print()
     
+    
+    #pattern 28
     '''
     * * * * *
       *     *
@@ -504,6 +526,12 @@ class patternPrinter:
                 else:
                     print(" ",end = " ")
             print()    
+    
+    #pattern 29
+    '''
+    
+    '''
+    
     
     
 def main():
