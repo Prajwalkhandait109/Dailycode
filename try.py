@@ -18,4 +18,8 @@ def main():
     print("Output array:", result)
 
 if __name__ == "__main__":
-    main()
+
+
+
+
+
