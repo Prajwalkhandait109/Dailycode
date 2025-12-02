@@ -13,7 +13,6 @@ Constraints:
 1 ≤ arr.size() ≤ 105
 1 ≤ arr[i] ≤ 105
 '''
-
 #Solution : 
 class Solution:
     def alternateSort(self, arr):
