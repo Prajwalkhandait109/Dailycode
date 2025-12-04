@@ -21,11 +21,18 @@ class Solution:
         left = 0
         right = n - 1
         result = []
+        
         while left < right:
             result.append(arr[right])
             result.append(arr[left])
             right -= 1
             left += 1
+            
         if n % 2 == 1:
             result.append(arr[left])
+            
         return result
+            
+            
+            
+            
