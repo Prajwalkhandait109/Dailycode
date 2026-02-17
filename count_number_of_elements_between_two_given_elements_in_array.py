@@ -1,5 +1,8 @@
 '''
-Given an unsorted array arr[] and two elements num1 and num2. The task is to count the number of elements that occur between the given elements (excluding num1 and num2). If there are multiple occurrences of num1 and num2, we need to consider the leftmost occurrence of num1 and the rightmost occurrence of num2.
+Given an unsorted array arr[] and two elements num1 and num2. The task is to count the number of 
+elements that occur between the given elements (excluding num1 and num2). If there are multiple 
+occurrences of num1 and num2, we need to consider the leftmost occurrence of num1 and the rightmost
+occurrence of num2.
 
 Examples:
 

@@ -27,3 +27,21 @@ class Solution:
         return arr[:-2]
         
     
+    
+#Solution 2:
+class Solution:
+    def findElements(self, arr):
+        if len(arr) < 2:
+            return []  # or handle as needed
+        
+        first_max = float('-inf')
+        second_max = float('-inf')
+        
+        for num in arr:
+            if num > first_max:
+                second_max = first_max
+                first_max = num
+            elif num > second_max and num != first_max:
+                second_max = num
+        
+        return [second_max, first_max] if second_max != float('-inf') else []

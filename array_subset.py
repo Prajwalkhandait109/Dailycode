@@ -15,7 +15,7 @@ Constraints:
 1 <= a.size(), b.size() <= 105
 1 <= a[i], b[j] <= 10'''
 
-Solution 1 :
+#Solution 1 :
 # solved most test cases but failed for some
 
 class Solution:
@@ -39,7 +39,7 @@ class Solution:
     
     
     
-Solution 2 : #optimal solution
+#Solution 2 : #optimal solution
 
 
 from collections import Counter

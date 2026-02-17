@@ -1,5 +1,6 @@
 '''
-Given an array arr[] of integers. Write a program to check whether an arithmetic progression can be formed using all the given elements. 
+Given an array arr[] of integers. Write a program to check whether an arithmetic progression can be
+formed using all the given elements. 
 
 Examples:
 
