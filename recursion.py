@@ -1,4 +1,8 @@
 # print numbers in reverse order
+def traditional(n):
+    for i in range(n-1,-1,-1):
+        print(i)
+    
 def count(n):
     if n == 3:
         return
@@ -8,6 +12,7 @@ def count(n):
 
 def main():
     count(0)
+    traditional(3)
 
 if __name__ == "__main__":
     main()
